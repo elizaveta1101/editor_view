@@ -148,7 +148,6 @@ window.onload = function () {
     }
 }
 
-
  //new function
  function setupWebGL() {
     mat4.identity(pMatrix);
@@ -226,4 +225,20 @@ function enableViewButtons() {
         }
     })
     console.log(viewButtons);
+}
+
+function makeBig() {
+    const canvas = document.querySelector('#canvas');
+    canvas.style.position="fixed";
+    canvas.style.top="0";
+    canvas.style.left="10%";
+    canvas.width=1000;
+    canvas.height=1000;
+}
+
+function makeSmall() {
+    const canvas = document.querySelector('#canvas');
+    canvas.style.position="initial";
+    canvas.width=500;
+    canvas.height=500;
 }
