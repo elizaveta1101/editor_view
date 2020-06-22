@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+    <link rel="stylesheet" href="./style/css/style.css">
+    <title>Редактор</title>
+</head>
+<body>  
+    <div class="editor">
+        <div class="editor__functions">
+            <!-- <button id="functionLine">Линия</button><br>
+            <button id="functionCurve" disabled>Кривая</button><br>
+            <button id="functionRectangle">Прямоугольник</button><br>
+            <button id="functionPolygon">Многоугольник</button><br>
+            <button id="functionCircle">Круг</button><br> -->
+        </div>
+        <div class="editor__interact">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="editor__buttons">
+            <!-- <button onclick="clearViewport();">Очистить</button> -->
+            <button onclick="set2D();">2D</button>
+            <button onclick="set3D();">3D</button>
+            <button onclick="zoomIn();">+</button>
+            <button onclick="zoomOut();">-</button>
+            <button onclick="turnLeft();">налево</button>
+            <button onclick="turnRight();">направо</button>
+            
+            <button onclick="moveForward();">вперед</button>
+            <button onclick="moveBackward();">назад</button>
+        </div>
+        <div class="editor__values">
+            <!-- <label for="angles">Количество углов</label><br>
+            <input type="text" id="angles" name="angles"><br><br>
+            <label for="side">Длина стороны</label><br>
+            <input type="text" id="side" name="side"><br><br>
+            <label for="turn">Угол поворота (в градусах)</label><br>
+            <input type="text" id="turn" name="turn"><br><br>
+            <hr>
+            <label for="radius">Радиус круга</label><br>
+            <input type="text" id="radius" name="radius"><br><br> -->
+        </div>
+        
+    </div>
+    <script src="./src/gl-matrix.js"></script>
+    <script src="./src/view.js"></script>
+</body>
+</html>
